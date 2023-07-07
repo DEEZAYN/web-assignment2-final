@@ -1,0 +1,28 @@
+let arrayNumbers = [1, 3, -1, 5, -3, 10];
+
+let positiveNumbers = arrayNumbers.filter(number => number > 0);
+
+positiveNumbers.forEach(number => console.log(number));
+
+let sumPositiveNumbers = positiveNumbers.reduce((a, b) => a + b);
+
+console.log(`Sum of all is ${sumPositiveNumbers}`);
+
+// get average
+function getAverage(arr) {
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+sum += arr[i];
+}
+return Math.floor(sum / arr.length);
+}
+
+//value
+
+function containsValue(a, x) {
+  if (a.includes(x)) {
+    return true;
+  } else {
+    return false;
+  }
+}
